@@ -1,8 +1,5 @@
 require 'pry'
 
-#########################
-# Data for the newsletter
-#########################
 require "pry"
 CAMPUS = {
   "name": "DC",
@@ -22,10 +19,6 @@ ARTICLES = [
   {"author": "Michale Bruen Boehm", "title": "Consulting", "text": "Everyone has an individual background. Someone may come from Python, someone else may come from Perl, and they may be surprised by different aspects of the language. Then they come up to me and say, 'I was surprised by this feature of the language, so therefore Ruby violates the principle of least surprise.' Wait. Wait. The principle of least surprise is not for you only."},
   {"author": "Tony Keeling Cartwright", "title": "Design", "text": "Often people, especially computer engineers, focus on the machines. But in fact we need to focus on humans, on how humans care about doing programming or operating the application of the machines."},
 ]
-
-#########################
-# Methods to generate the newsletter
-#########################
 
 def calculate_recipients
   array = []
@@ -49,16 +42,11 @@ def print_one_article(article)
   puts article[:title]
   puts article[:author]
   puts article[:text]
-  puts ""
-  # Write a method that will take an article hash
-  # and print the title, author and text as a formatted string
-  # See the README/sample output for examples
+  puts "" #is there a better way to get a blank line between each article?
 end
 
 def print_many_articles(articles)
   articles.each{|article| print_one_article(article)}
-  # Write a method that will take in an array of article hashes
-  # and format each one using the print_one_article method
 end
 
 def format_campus_location(campus)
@@ -91,11 +79,8 @@ def print_newsletter(number)
 end
 
 def run
-  # We want our program to print three articles by default,
-  # but we can change that number here
   print_newsletter("3")
 end
 
-# When we run "ruby newsletter.rb" in the command line,
-# the 'run' method will be called because we're calling it below.
+
 run

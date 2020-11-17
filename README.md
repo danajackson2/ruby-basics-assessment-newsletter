@@ -62,7 +62,7 @@ You can check if your version is working by looking at the output -`cedricschmid
 
 Your `calculate_recipients` method should return a new array - it should not change the `SUBSCRIBERS` array.
 
-### 4. Write the `print_recipients` method to print a string with a list of the correct recipients
+### 4. Write the `print_recipients` method to print a string with a list of the correct recipients 
 
 We want our "RECIPIENTS: " line to include a list of the email addresses of the newsletter's recipients, separated by commas. Use the `calculate_recipients` method to get the correct email addresses, then print and format them in this method.
 

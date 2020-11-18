@@ -42,7 +42,7 @@ def print_one_article(article)
   puts article[:title]
   puts "by: #{article[:author]}"
   puts article[:text]
-  puts "" #is there a better way to get a blank line between each article?
+  puts "" #better way to get a blank line between each article?
 end
 
 def print_many_articles(articles)
